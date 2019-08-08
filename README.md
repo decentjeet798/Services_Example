@@ -18,16 +18,16 @@ It is possible to assign services the same priority as foreground activities. In
 
 To create service we will create a normal class extending the class Service. And we should override the following methods.
 
-onStartCommand()
+## onStartCommand()
 
 This method is invoked when the service is started using the startService() method. We can call the method startService() from any activity and it will request the service to start.
-onBind()
+## onBind()
 
 If it is needed to bind the service with an activity this method is called. The service can result back something to the activity after binding. But if you do not want to bind the service with activity then you should return null on this method.
-onCreate()
+## onCreate()
 
 This method is called when the service is created.
-onDestroy()
+## onDestroy()
 
 When the service is no longer used and destroyed this method is called by the system.
 
