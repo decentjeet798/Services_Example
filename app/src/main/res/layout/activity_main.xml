@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f7e7"
+    android:padding="6dp"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+        android:text="@string/start_service" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_below="@+id/buttonStart"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:background="@drawable/circle"
+        android:text="@string/stop_service" />
+
+
+</RelativeLayout>
